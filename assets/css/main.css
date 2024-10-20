@@ -2350,3 +2350,148 @@ p {
     max-width: 280px;
   }
 }
+
+.technology-slider-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+.swiper-container {
+  width: 100%;
+  padding: 20px 0;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tech-icon {
+  max-width: 60%;
+  max-height: 60%;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #00237e;
+}
+
+.document-section {
+  background: #0e1629;
+}
+
+.document-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.document-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.document-card:hover {
+  transform: translateY(-5px);
+}
+.document-card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.document-card h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+.document-card p {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+.document-card a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #0e1629;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+@media (max-width: 1200px) {
+  .document-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .document-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .document-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.methodology-tabs .nav-tabs {
+  border-bottom: 2px solid #dee2e6;
+  margin-bottom: 20px;
+}
+
+.methodology-tabs .nav-tabs .nav-link {
+  border: none;
+  color: #495057;
+  font-weight: 600;
+  padding: 10px 15px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.methodology-tabs .nav-tabs .nav-link:hover,
+.methodology-tabs .nav-tabs .nav-link.active {
+  color: #0e1629;
+  background-color: transparent;
+  border-bottom: 2px solid #0e1629;
+}
+
+.methodology-tabs .tab-content {
+  padding: 20px 0;
+}
+
+.methodology-tabs .tab-pane h3 {
+  color: #0e1629;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.methodology-tabs .tab-pane p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.methodology-section .about-img {
+  position: relative;
+  z-index: 1;
+  padding: 75px 0;
+}
+
+.methodology-section .about-img .shape {
+  position: absolute;
+  z-index: -1;
+}
+
+.methodology-section .about-img .shape.shape-1 {
+  top: 50%;
+  -webkit-transform: translateY(-50%) scaleX(-1);
+  transform: translateY(-50%) scaleX(-1);
+  right: -70px; /* Changed from left to right */
+}
+
+.methodology-section .about-img .shape.shape-2 {
+  bottom: 0;
+  left: 50px; /* Changed from right to left */
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}

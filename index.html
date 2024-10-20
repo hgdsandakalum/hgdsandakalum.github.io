@@ -12,7 +12,8 @@
         <link rel="stylesheet" href="assets/css/animate.css" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />  
     </head>
 
     <header class="header">
@@ -36,12 +37,14 @@
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#objectives">Objectives</a>
                                     </li>
-    
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#results">Results</a>
+                                        <a class="page-scroll" href="#methodology">Methodology</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="javascript:void(0)" href="#team">Team</a>
+                                        <a class="page-scroll" href="#documents">Documents</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#team">Team</a>
                                     </li>
                                 </ul>
                             </div>
@@ -160,71 +163,6 @@
         </div>
     </section>
 
-    </section>
-
-    <!-- <section id="features" class="feature-section pt-120">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-8 col-sm-10">
-                    <div class="single-feature">
-                        <div class="icon">
-                            <i class="lni lni-bootstrap"></i>
-                        </div>
-                        <div class="content">
-                            <h3>Bootstrap 5</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                diam nonumy eirmod tempor invidunt ut labore
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-8 col-sm-10">
-                    <div class="single-feature">
-                        <div class="icon">
-                            <i class="lni lni-layout"></i>
-                        </div>
-                        <div class="content">
-                            <h3>Clean Design</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                diam nonumy eirmod tempor invidunt ut labore
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-8 col-sm-10">
-                    <div class="single-feature">
-                        <div class="icon">
-                            <i class="lni lni-coffee-cup"></i>
-                        </div>
-                        <div class="content">
-                            <h3>Easy to Use</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                diam nonumy eirmod tempor invidunt ut labore
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-8 col-sm-10">
-                    <div class="single-feature">
-                        <div class="icon">
-                            <i class="lni lni-coffee-cup"></i>
-                        </div>
-                        <div class="content">
-                            <h3>Easy to Use</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                diam nonumy eirmod tempor invidunt ut labore
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <section id="objectives" class="feature-section pt-120">
         <div class="container">
             <div class="text-center">
@@ -284,106 +222,264 @@
         </div>
     </section>
 
-    <section id="results" class="about-section pt-150">
+    <section id="methodology" class="pt-150 pb-100 methodology-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6">
                     <div class="about-content">
                         <div class="section-title mb-30">
-                            <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">Research Results</h2>
-                            <p class="wow fadeInUp" data-wow-delay=".4s">
-                                Our simulations and user testing indicate that the proposed strategy was successful in
-                                providing recommendations suitable to the unique medical conditions and preferences of
-                                diabetic retinopathy patients.
-                            </p>
+                            <h2 class="fw-bold mb-25">Methodology</h2>
+                        </div>
+                        <div class="methodology-tabs">
+                            <ul class="nav nav-tabs" id="methodologyTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="objective1-tab" data-bs-toggle="tab"
+                                        data-bs-target="#objective1" type="button" role="tab" aria-controls="objective1"
+                                        aria-selected="true"><img src="assets/img/methodology/eye.svg" alt="" /></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="objective2-tab" data-bs-toggle="tab"
+                                        data-bs-target="#objective2" type="button" role="tab" aria-controls="objective2"
+                                        aria-selected="false"><img src="assets/img/methodology/egg-fried.svg" alt="" /></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="objective3-tab" data-bs-toggle="tab"
+                                        data-bs-target="#objective3" type="button" role="tab" aria-controls="objective3"
+                                        aria-selected="false"><img src="assets/img/methodology/phone-vibrate.svg" alt="" /></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="objective4-tab" data-bs-toggle="tab"
+                                        data-bs-target="#objective4" type="button" role="tab" aria-controls="objective4"
+                                        aria-selected="false"><img src="assets/img/methodology/file-earmark-text.svg" alt="" /></button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="methodologyTabContent">
+                                <div class="tab-pane fade show active" id="objective1" role="tabpanel"
+                                    aria-labelledby="objective1-tab">
+                                    <h3>Deep Learning for Retinopathy Detection</h3>
+                                    <p>Our methodology involves developing and optimizing deep learning models to accurately
+                                        detect and classify diabetic retinopathy from retinal images. This includes data
+                                        preprocessing, model selection, training, and validation.</p>
+                                </div>
+                                <div class="tab-pane fade" id="objective2" role="tabpanel" aria-labelledby="objective2-tab">
+                                    <h3>Personalized Recommendations</h3>
+                                    <p>We utilize reinforcement learning techniques to provide personalized recommendations
+                                        for diabetic retinopathy management. This approach adapts to individual patient data
+                                        and feedback to improve recommendations over time.</p>
+                                </div>
+                                <div class="tab-pane fade" id="objective3" role="tabpanel" aria-labelledby="objective3-tab">
+                                    <h3>Vision Monitoring and Alert System</h3>
+                                    <p>Our interactive vision monitoring system employs gamification techniques and regular
+                                        assessments to track changes in patients' vision. This proactive approach enables
+                                        early detection of potential issues.</p>
+                                </div>
+                                <div class="tab-pane fade" id="objective4" role="tabpanel" aria-labelledby="objective4-tab">
+                                    <h3>Predictive Risk Assessment</h3>
+                                    <p>We develop machine learning models that predict the risk of diabetic retinopathy
+                                        using clinical data, without relying on retinal images. This involves feature
+                                        selection, model training, and continuous validation.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6">
                     <div class="about-img">
-                        <img src="assets/img/about/results-graph.jpg" alt="Research Results" class="w-100">
+                        <img src="assets/img/hero/hero-img.png" alt="Methodology Illustration" class="w-100" />
+                        <img src="assets/img/about/about-left-shape.svg" alt="" class="shape shape-1" />
+                        <img src="assets/img/about/left-dots.svg" alt="" class="shape shape-2" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="technologies" class="technologies-section pt-50">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-25">Technologies Used</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" >
+                        <img src="assets/img/techs//Picture23.png" class="tech-icon">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/techs//Picture22.png" class="tech-icon">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/techs//Picture11.png" class="tech-icon">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/techs//Picture20.png" class="tech-icon">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/techs//Picture18.png" class="tech-icon">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/techs//Picture16.png" class="tech-icon">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/techs//Picture21.png" class="tech-icon">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/techs//Picture24.png" class="tech-icon">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/techs//Picture19.png" class="tech-icon">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/techs//Picture17.png" class="tech-icon">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/techs//Picture15.png" class="tech-icon">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/techs//Picture14.png" class="tech-icon">
+                    </div>
+                 
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="documents" class="document-section mt-100 pt-80 pb-80" >
+        <div class="container">
+            <div class="section-title text-center text-white mb-50">
+                <h2 class="fw-bold mb-25">Research Documents</h2>
+                <p>Explore our comprehensive collection of reports and presentations, showcasing the essence of our projects
+                    and research endeavors.</p>
+            </div>
+            <div class="document-grid">
+                <div class="document-card">
+                    <img src="assets//img/objectives//file-earmark-text.svg" alt="PDF">
+                    <h3>Topic Assessment</h3>
+                    <p>Submitted on 2023/05/06</p>
+                    <a href="path/to/document.pdf" download>Download</a>
+                </div>
+                <div class="document-card">
+                    <img src="assets//img/objectives//file-earmark-text.svg" alt="PDF">
+                    <h3>Project Charter</h3>
+                    <p>Submitted on 2023/05/06</p>
+                    <a href="path/to/document.pdf" download>Download</a>
+                </div>
+                <div class="document-card">
+                    <img src="assets//img/objectives//file-earmark-text.svg" alt="PDF">
+                    <h3>Project Proposal Report</h3>
+                    <p>Submitted on 2023/05/07</p>
+                    <a href="path/to/document.pdf" download>Download</a>
+                </div>
+                <div class="document-card">
+                    <img src="assets//img/objectives//file-earmark-text.svg" alt="PDF">
+                    <h3>Status Document 1</h3>
+                    <p>Submitted on 2023/05/29</p>
+                    <a href="path/to/document.pdf" download>Download</a>
+                </div>
+                <div class="document-card">
+                    <img src="assets//img/objectives//file-earmark-text.svg" alt="PDF">
+                    <h3>Status Document 2</h3>
+                    <p>Submitted on 2023/09/08</p>
+                    <a href="path/to/document.pdf" download>Download</a>
+                </div>
+                <div class="document-card">
+                    <img src="assets//img/objectives//file-earmark-text.svg" alt="PDF">
+                    <h3>Research Paper</h3>
+                    <p>Submitted on 2023/06/25</p>
+                    <a href="path/to/document.pdf" download>Download</a>
+                </div>
+                <div class="document-card">
+                    <img src="assets//img/objectives//file-earmark-text.svg" alt="PDF">
+                    <h3>Final Report</h3>
+                    <p>Submitted on 2023/06/25</p>
+                    <a href="path/to/document.pdf" download>Download</a>
+                </div>
+                <div class="document-card">
+                    <img src="assets//img/objectives//file-earmark-text.svg" alt="PDF">
+                    <h3>Research Poster</h3>
+                    <p>Submitted on 2023/06/25</p>
+                    <a href="path/to/document.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section id="team" class="team mt-80">
         <h2 class="fw-bold mb-10">Our Team</h2>
         <p class="fs-6 mb-100">Our dedicated team, consisting of a supervisor, a co-supervisor, and four enthusiastic members, collaborated to achieve
         outstanding results.</p>
     
-    <div class="team-grid mt-50">
-        <div class="team-member">
-            <div class="image-container">
-                <img src="assets/img/team//Picture1.png" alt="Team Member">
+        <div class="team-grid mt-50">
+            <div class="team-member">
+                <div class="image-container">
+                    <img src="assets/img/team//Picture1.png" alt="Team Member">
+                </div>
+                <div class="member-info">
+                    <h3>Dr. Dharshana Kasthurirathna</h3>
+                    <p style="font-weight: 800;">Supervisor</p>
+                    <p>Department of Information Technology</p>
+                    <p>Sri Lanka Institute of Information Technology</p>
+                </div>
             </div>
-            <div class="member-info">
-                <h3>Dr. Dharshana Kasthurirathna</h3>
-                <p style="font-weight: 800;">Supervisor</p>
-                <p>Department of Information Technology</p>
-                <p>Sri Lanka Institute of Information Technology</p>
+            <div class="team-member">
+                <div class="image-container">
+                    <img src="assets/img/team//Picture2.png" alt="Team Member">
+                </div>
+                <div class="member-info">
+                    <h3>Mrs. Jenny Krishara</h3>
+                    <p style="font-weight: 800;">Co-Supervisor</p>
+                    <p>Department of Information Technology</p>
+                    <p>Sri Lanka Institute of Information Technology</p>
+                </div>
             </div>
         </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="assets/img/team//Picture2.png" alt="Team Member">
-            </div>
-            <div class="member-info">
-                <h3>Mrs. Jenny Krishara</h3>
-                <p style="font-weight: 800;">Co-Supervisor</p>
-                <p>Department of Information Technology</p>
-                <p>Sri Lanka Institute of Information Technology</p>
-            </div>
-        </div>
-    </div>
     
-    <div class="team-grid row-2">
-        <div class="team-member">
-            <div class="image-container">
-                <img src="assets/img/team//Picture5.png" alt="Team Member">
+        <div class="team-grid row-2">
+            <div class="team-member">
+                <div class="image-container">
+                    <img src="assets/img/team//Picture5.png" alt="Team Member">
+                </div>
+                <div class="member-info">
+                    <h3>H.M.A.I.B Herath</h3>
+                    <p style="font-weight: 800;">IT21041648</p>
+                    <p>Department of Information Technology</p>
+                    <p>Sri Lanka Institute of Information Technology</p>
+                </div>
             </div>
-            <div class="member-info">
-                <h3>H.M.A.I.B Herath</h3>
-                <p style="font-weight: 800;">IT21041648</p>
-                <p>Department of Information Technology</p>
-                <p>Sri Lanka Institute of Information Technology</p>
+            <div class="team-member">
+                <div class="image-container">
+                    <img src="assets/img/team//Picture6.png" alt="Team Member">
+                </div>
+                <div class="member-info">
+                    <h3>T.F Samoon</h3>
+                    <p style="font-weight: 800;">IT21084690</p>
+                    <p>Department of Information Technology</p>
+                    <p>Sri Lanka Institute of Information Technology</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="image-container">
+                    <img src="assets/img/team//Picture7.png" alt="Team Member">
+                </div>
+                <div class="member-info">
+                    <h3>Thushan P.V</h3>
+                    <p style="font-weight: 800;">IT21024368</p>
+                    <p>Department of Information Technology</p>
+                    <p>Sri Lanka Institute of Information Technology</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="image-container">
+                    <img src="assets/img/team//Picture4.png" alt="Team Member">
+                </div>
+                <div class="member-info">
+                    <h3>H.G.D. Sandakalum</h3>
+                    <p style="font-weight: 800;">IT19143200</p>
+                    <p>Department of Information Technology</p>
+                    <p>Sri Lanka Institute of Information Technology</p>
+                </div>
             </div>
         </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="assets/img/team//Picture6.png" alt="Team Member">
-            </div>
-            <div class="member-info">
-                <h3>T.F Samoon</h3>
-                <p style="font-weight: 800;">IT21084690</p>
-                <p>Department of Information Technology</p>
-                <p>Sri Lanka Institute of Information Technology</p>
-            </div>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="assets/img/team//Picture7.png" alt="Team Member">
-            </div>
-            <div class="member-info">
-                <h3>Thushan P.V</h3>
-                <p style="font-weight: 800;">IT21024368</p>
-                <p>Department of Information Technology</p>
-                <p>Sri Lanka Institute of Information Technology</p>
-            </div>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="assets/img/team//Picture4.png" alt="Team Member">
-            </div>
-            <div class="member-info">
-                <h3>H.G.D. Sandakalum</h3>
-                <p style="font-weight: 800;">IT19143200</p>
-                <p>Department of Information Technology</p>
-                <p>Sri Lanka Institute of Information Technology</p>
-            </div>
-        </div>
-    </div>
     </section>
 
     <footer class="footer">
@@ -421,5 +517,47 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                640: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                },
+                992: {
+                    slidesPerView: 5,
+                    spaceBetween: 50
+                }
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var triggerTabList = [].slice.call(document.querySelectorAll('#methodologyTabs button'))
+            triggerTabList.forEach(function (triggerEl) {
+                var tabTrigger = new bootstrap.Tab(triggerEl)
 
+                triggerEl.addEventListener('click', function (event) {
+                    event.preventDefault()
+                    tabTrigger.show()
+                })
+            })
+        })
+    </script>
 </html>

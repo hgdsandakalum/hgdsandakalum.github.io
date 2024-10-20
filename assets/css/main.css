@@ -90,7 +90,7 @@ h6 {
 }
 
 .section-title p {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 28px;
 }
 
@@ -188,7 +188,7 @@ ol {
 }
 
 p {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 26px;
   margin: 0px;
@@ -760,7 +760,7 @@ p {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #fdd446;
+  background: #a1aab7;
   bottom: 15px;
   left: 0;
   z-index: -1;
@@ -965,12 +965,12 @@ p {
 
 .feature-section .single-feature {
   text-align: center;
-  padding: 30px 10px;
+  padding: 20px 10px;
 }
 
 @media only screen and (min-width: 1400px) {
   .feature-section .single-feature {
-    padding: 30px 40px;
+    padding: 10px 20px;
   }
 }
 
@@ -978,7 +978,7 @@ p {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  background: rgba(88, 100, 255, 0.1);
+  background: #161d2f;
   color: #5864ff;
   margin: auto;
   margin-bottom: 30px;
@@ -987,12 +987,13 @@ p {
 }
 
 .feature-section .single-feature .content h3 {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 800;
 }
 
 .feature-section .single-feature .content p {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 14px;
 }
 
 .box-style {
@@ -1245,10 +1246,10 @@ p {
 
 .about-section .about-content ul li {
   padding-left: 40px;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 600;
   color: #162447;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   position: relative;
 }
 
@@ -1257,12 +1258,55 @@ p {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: #5864ff;
+  background: #262d3e;
   position: absolute;
   left: 0;
-  top: 6.5px;
+  top: 4.5px;
   -webkit-box-shadow: 0px 14px 15px rgba(78, 110, 241, 0.26);
   box-shadow: 0px 14px 15px rgba(78, 110, 241, 0.26);
+}
+
+.research-problems-section {
+  background: #262d3e;
+  color: white;
+  padding: 80px 0;
+}
+
+.research-problems-section .section-title h2 {
+  color: white;
+}
+
+.research-problems-section .problem-card {
+  border-right: 2px solid white;
+  height: 100%;
+  padding: 20px;
+}
+
+.research-problems-section .col-md-3:last-child .problem-card {
+  border-right: none;
+}
+
+.research-problems-section h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.research-problems-section p {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 767px) {
+  .research-problems-section .problem-card {
+    border-right: none;
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .research-problems-section .col-md-3:last-child .problem-card {
+    border-bottom: none;
+  }
 }
 
 /* ====== feature-extended css ====== */

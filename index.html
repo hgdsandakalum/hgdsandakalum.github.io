@@ -257,15 +257,33 @@
                                 <div class="tab-pane fade show active" id="objective1" role="tabpanel"
                                     aria-labelledby="objective1-tab">
                                     <h3>Deep Learning for Retinopathy Detection</h3>
-                                    <p>Our methodology involves developing and optimizing deep learning models to accurately
-                                        detect and classify diabetic retinopathy from retinal images. This includes data
-                                        preprocessing, model selection, training, and validation.</p>
+                                    <p>The research methodology for improving Diabetic Retinopathy (DR) management through advanced predictive models involves
+                                    a comprehensive approach, from data collection to model evaluation. Using two key datasets, APTOS 2019 and Retinopathy
+                                    2015, the study prepares retinal images through preprocessing steps like resizing, normalizing, and data augmentation. A
+                                    DenseNet-based Convolutional Neural Network (CNN) is employed for its effective feature extraction capabilities.
+                                    Transfer learning with pre-trained models, such as EfficientNet and MobileNet, is used to boost model performance.
+                                    The model is trained with the Adam optimizer, monitoring key metrics like accuracy, precision, recall, and F1-score. The
+                                    research adopts a microservices architecture, using Docker for containerization and Kubernetes for orchestration,
+                                    ensuring scalability and efficient resource management. The evaluation process tests the model on a separate validation
+                                    set and compares it to existing solutions. This methodology combines cutting-edge deep learning and scalable system
+                                    design to enhance DR detection and management in clinical settings.</p>
                                 </div>
                                 <div class="tab-pane fade" id="objective2" role="tabpanel" aria-labelledby="objective2-tab">
                                     <h3>Personalized Recommendations</h3>
-                                    <p>We utilize reinforcement learning techniques to provide personalized recommendations
-                                        for diabetic retinopathy management. This approach adapts to individual patient data
-                                        and feedback to improve recommendations over time.</p>
+                                    <p>The “Retina-care” mobile app, developed using React Native, integrates a personalized dietary and exercise recommender
+                                    system for diabetic retinopathy management. The dietary recommendation system utilizes Q-learning and an expert system
+                                    to generate personalized meal plans based on user conditions such as activeness and dietary preferences. Each patient’s
+                                    state is defined by a combination of conditions, and diet plans serve as actions. Initially, a Q-table is generated for
+                                    each user, which is updated through reinforcement learning based on feedback from the user.
+                                    
+                                    The cold start problem was addressed by implementing three solutions: the epsilon-greedy method, initialized Q-tables,
+                                    and integrating an expert system. Ultimately, the expert system was preferred due to ethical concerns with random
+                                    actions in a medical context. The system tracks cumulative rewards to adjust recommendations based on user feedback.
+                                    Doctors can also add new meal plans, dynamically updating the Q-tables.
+                                    
+                                    For exercise recommendations, a more generic expert system was implemented, offering suggestions based on medical
+                                    factors. The system ensures a balance between medical appropriateness and user preferences. The framework could be
+                                    adapted for other medical applications, such as autism management.</p>
                                 </div>
                                 <div class="tab-pane fade" id="objective3" role="tabpanel" aria-labelledby="objective3-tab">
                                     <h3>Vision Monitoring and Alert System</h3>
@@ -337,8 +355,7 @@
                     </div>
                  
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+              
             </div>
         </div>
     </section>

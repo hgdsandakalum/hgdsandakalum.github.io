@@ -1,6 +1,4 @@
 (function () {
-  //===== Prealoder
-
   window.onload = function () {
     window.setTimeout(fadeout, 500);
   };
@@ -10,9 +8,6 @@
     document.querySelector(".preloader").style.display = "none";
   }
 
-  /*=====================================
-    Sticky
-    ======================================= */
   window.onscroll = function () {
     const header_navbar = document.querySelector(".navbar-area");
     const sticky = header_navbar.offsetTop;
@@ -24,7 +19,6 @@
       header_navbar.classList.remove("sticky");
     }
 
-    // show or hide the back-top-top button
     const backToTo = document.querySelector(".scroll-top");
     if (
       document.body.scrollTop > 50 ||
@@ -36,7 +30,6 @@
     }
   };
 
-  // for menu scroll
   const pageLink = document.querySelectorAll(".page-scroll");
 
   pageLink.forEach((elem) => {
@@ -49,7 +42,6 @@
     });
   });
 
-  // section menu active
   function onScroll(event) {
     const sections = document.querySelectorAll(".page-scroll");
     const scrollPos =
@@ -76,7 +68,6 @@
 
   window.document.addEventListener("scroll", onScroll);
 
-  //===== close navbar-collapse when a  clicked
   let navbarToggler = document.querySelector(".navbar-toggler");
   const navbarCollapse = document.querySelector(".navbar-collapse");
 
@@ -89,7 +80,4 @@
   navbarToggler.addEventListener("click", function () {
     navbarToggler.classList.toggle("active");
   });
-
-  // WOW active
-  new WOW().init();
 })();
